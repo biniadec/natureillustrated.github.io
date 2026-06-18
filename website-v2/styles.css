@@ -197,9 +197,10 @@ h2 em { color: var(--terracotta); font-weight: 400; }
 .gallery-images img:hover { transform: scale(1.025); }
 .journal-cover-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; min-width: 0; }
 .journal-cover-grid img { width: 100%; height: 100%; aspect-ratio: 3 / 4; object-fit: contain; padding: 10px; background: rgba(250, 247, 239, .08); border: 1px solid rgba(255,255,255,.12); border-radius: 12px; }
-.logo-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; min-width: 0; }
-.logo-card-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 12px; transition: transform .5s; }
-.logo-card-grid img:hover { transform: scale(1.025); }
+.logo-tile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; min-width: 0; }
+.logo-tile { display: flex; align-items: center; justify-content: center; height: 190px; padding: 20px; overflow: hidden; background: rgba(250, 247, 239, .08); border: 1px solid rgba(255,255,255,.12); border-radius: 12px; }
+.logo-tile img { width: auto; max-width: 84%; max-height: 84%; object-fit: contain; transition: transform .5s; }
+.logo-tile img:hover { transform: scale(1.025); }
 
 .shop { background: #e9e1d4; }
 .shop-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(55px, 9vw, 115px); }
@@ -325,7 +326,7 @@ h2 em { color: var(--terracotta); font-weight: 400; }
   .thumbs { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; }
   .thumbs img { aspect-ratio: 1; }
   .journal-cover-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .logo-card-grid { grid-template-columns: 1fr; }
+  .logo-tile-grid { grid-template-columns: 1fr; }
   .collage-grid { grid-template-columns: 1fr; }
   .collage-anchor,
   .collage-wide,
