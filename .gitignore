@@ -2,6 +2,31 @@
 website-v2/reference_images/
 reference_images/
 website-v2/assets/images/logos/*.png
+website-v2/assets/images/portfolio/figures/*.jpg
+website-v2/assets/images/portfolio/figures/*.jpeg
+website-v2/assets/images/portfolio/figures/*.png
+website-v2/assets/images/portfolio/figures/*.pdf
+website-v2/assets/images/portfolio/graphical_abstracts/*.jpg
+website-v2/assets/images/portfolio/graphical_abstracts/*.jpeg
+website-v2/assets/images/portfolio/graphical_abstracts/*.png
+website-v2/assets/images/portfolio/graphical_abstracts/*.pdf
+website-v2/assets/images/portfolio/journal-covers/*.jpg
+website-v2/assets/images/portfolio/journal-covers/*.jpeg
+website-v2/assets/images/portfolio/journal-covers/*.png
+website-v2/assets/images/portfolio/journal-covers/*.pdf
+website-v2/assets/images/portfolio/nature_art_and_products/*.jpg
+website-v2/assets/images/portfolio/nature_art_and_products/*.jpeg
+website-v2/assets/images/portfolio/nature_art_and_products/*.png
+website-v2/assets/images/portfolio/nature_art_and_products/*.pdf
+website-v2/assets/images/portfolio/scientific_illustration/*.jpg
+website-v2/assets/images/portfolio/scientific_illustration/*.jpeg
+website-v2/assets/images/portfolio/scientific_illustration/*.png
+website-v2/assets/images/portfolio/scientific_illustration/*.pdf
+website-v2/assets/images/portfolio/scientific_illustration/*.webp
+website-v2/assets/images/portfolio/thesis_cover/*.jpg
+website-v2/assets/images/portfolio/thesis_cover/*.jpeg
+website-v2/assets/images/portfolio/thesis_cover/*.png
+website-v2/assets/images/portfolio/thesis_cover/*.pdf
 
 # Local export scratch space.
 .DS_Store
