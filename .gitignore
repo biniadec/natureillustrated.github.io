@@ -1,0 +1,8 @@
+# Private/source image archives belong in the private reference-image repo.
+website-v2/reference_images/
+reference_images/
+
+# Local export scratch space.
+*.psd
+*.ai
+*.indd
