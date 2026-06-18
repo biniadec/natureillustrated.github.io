@@ -1,8 +1,10 @@
 # Private/source image archives belong in the private reference-image repo.
 website-v2/reference_images/
 reference_images/
+website-v2/assets/images/logos/*.png
 
 # Local export scratch space.
+.DS_Store
 *.psd
 *.ai
 *.indd
