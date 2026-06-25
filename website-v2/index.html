@@ -220,13 +220,14 @@
             <a data-social-link="bluesky" target="_blank" rel="noopener noreferrer">Bluesky <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <form class="contact-form reveal" data-contact-form method="post" enctype="text/plain">
+        <form class="contact-form reveal" action="https://formspree.io/f/mnjkpdqp" method="POST">
+          <input type="hidden" name="_subject" value="New enquiry from Nature.Illustrated">
           <div class="field-row">
             <label>Name<input type="text" name="name" autocomplete="name" required placeholder="Your name"></label>
             <label>Email<input type="email" name="email" autocomplete="email" required placeholder="Your email address"></label>
           </div>
           <label>Project type
-            <select name="project-type" required>
+            <select name="project_type" required>
               <option value="" selected disabled>Select a service</option>
               <option>Scientific illustration</option><option>Graphical abstract</option><option>Journal cover art</option><option>Figure or poster design</option><option>Lab logo or branding</option><option>Other</option>
             </select>

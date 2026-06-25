@@ -14,10 +14,6 @@ document.querySelectorAll('[data-contact-email]').forEach((link) => {
   link.textContent = contactEmail;
 });
 
-document.querySelectorAll('[data-contact-form]').forEach((form) => {
-  form.action = `mailto:${contactEmail}`;
-});
-
 document.querySelectorAll('[data-shop-link]').forEach((link) => {
   link.href = siteConfig.shop.url;
 });
