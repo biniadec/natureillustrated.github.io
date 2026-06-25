@@ -84,11 +84,6 @@ h2 em { color: var(--terracotta); font-weight: 400; }
 .portrait figcaption span { display: block; margin-top: 6px; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
 .about-copy .about-lead { margin: 35px 0 20px; color: var(--forest); font: 400 24px/1.4 var(--serif); }
 .about-copy > p:not(.overline):not(.about-lead) { max-width: 650px; color: #5e6761; }
-.about-details { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; margin-top: 40px; padding: 15px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; }
-.about-details span { padding: 13px; border-bottom: 1px solid var(--line); }
-.about-details span:nth-last-child(-n+2) { border-bottom: 0; }
-.about-details span { color: #5e6761; font-size: 12px; }
-.about-details b { display: block; margin-bottom: 5px; color: var(--forest); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
 
 .services { background: var(--paper); }
 .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
@@ -241,9 +236,6 @@ h2 em { color: var(--terracotta); font-weight: 400; }
   .about-grid, .services-grid, .shop-grid, .smbe-grid, .contact-grid { grid-template-columns: 1fr; }
   .portrait { min-height: 540px; width: min(100%, 420px); margin-inline: auto; }
   .portrait img { min-height: 540px; height: 540px; }
-  .about-details { grid-template-columns: 1fr; }
-  .about-details span, .about-details span:nth-last-child(-n+2) { border-bottom: 1px solid var(--line); }
-  .about-details span:last-child { border-bottom: 0; }
   .service-card { grid-template-columns: 52px 1fr; padding: 25px 20px; }
   .service-icon { width: 45px; height: 45px; }
   .service-icon svg { width: 26px; height: 26px; }
