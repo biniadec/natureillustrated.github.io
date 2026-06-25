@@ -16,14 +16,14 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; color: var(--charcoal); background: var(--cream); font-family: var(--sans); font-size: 16px; line-height: 1.65; }
+body { margin: 0; overflow-x: hidden; color: var(--charcoal); background: var(--cream); font-family: var(--sans); font-size: 16px; line-height: 1.65; }
 body.menu-open { overflow: hidden; }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--terracotta); outline-offset: 4px; }
-.container { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+.container { width: min(1180px, calc(100% - 48px)); max-width: 100%; margin-inline: auto; }
 .section { padding: 112px 0; scroll-margin-top: 66px; }
 .skip-link { position: fixed; left: 16px; top: -60px; z-index: 1000; padding: 10px 16px; color: var(--forest); background: var(--paper); border-radius: 6px; }
 .skip-link:focus { top: 16px; }
@@ -198,6 +198,45 @@ h2 em { color: var(--terracotta); font-weight: 400; }
   .gallery-label { max-width: 300px; }
 }
 
+@media (max-width: 768px) {
+  .container { width: min(100% - 40px, 680px); }
+  .section { padding: 82px 0; }
+  .section-intro { gap: 22px; margin-bottom: 40px; }
+  .gallery-sections { border-top-color: rgba(255,255,255,.14); }
+  .gallery-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 46px 0;
+  }
+  .gallery-label { max-width: none; }
+  .gallery-label h3 { margin-top: 14px; font-size: 28px; }
+  .gallery-label p { max-width: 48ch; }
+  .portfolio-card-grid,
+  .logo-tile-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .portfolio-card-grid img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    object-fit: contain;
+    padding: 12px;
+  }
+  .portfolio-card-grid--single img { aspect-ratio: 1.25; }
+  .logo-tile {
+    height: clamp(170px, 42vw, 260px);
+    padding: 12px;
+  }
+  .logo-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 @media (max-width: 680px) {
   .container { width: min(100% - 34px, 600px); }
   .section { padding: 76px 0; }
@@ -223,12 +262,6 @@ h2 em { color: var(--terracotta); font-weight: 400; }
   .showcase { aspect-ratio: 1.25; }
   .thumbs { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; }
   .thumbs img { aspect-ratio: 1; }
-  .portfolio-card-grid--covers,
-  .portfolio-card-grid--square,
-  .portfolio-card-grid--mixed { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .portfolio-card-grid--landscape,
-  .portfolio-card-grid--single { grid-template-columns: 1fr; }
-  .logo-tile-grid { grid-template-columns: 1fr; }
   .product-showcase { min-height: 510px; }
   .shop-shirt-front { width: min(72%, 410px); }
   .shop-shirt-back { width: min(66%, 380px); }
@@ -241,6 +274,48 @@ h2 em { color: var(--terracotta); font-weight: 400; }
   .footer-main, .footer-bottom { display: block; }
   .footer-links { justify-content: flex-start; margin-top: 34px; }
   .footer-bottom span { display: block; margin-top: 8px; }
+}
+
+@media (max-width: 480px) {
+  .container { width: min(100% - 28px, 460px); }
+  .section { padding: 64px 0; }
+  .section-intro { margin-bottom: 32px; }
+  .site-nav { padding-inline: 7vw; font-size: 27px; }
+  .hero { min-height: 720px; padding-bottom: 62px; }
+  .hero h1 { font-size: 48px; }
+  .hero-subtitle { font-size: 21px; }
+  .hero-actions .button {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .about-grid,
+  .services-grid,
+  .shop-grid,
+  .contact-grid { gap: 38px; }
+  .portrait,
+  .portrait img {
+    min-height: 480px;
+    height: 480px;
+  }
+  .service-card {
+    grid-template-columns: 46px 1fr;
+    gap: 16px;
+    min-height: 0;
+    padding: 22px 18px;
+  }
+  .gallery-row {
+    gap: 20px;
+    padding: 38px 0;
+  }
+  .gallery-label h3 { font-size: 26px; }
+  .portfolio-card-grid { gap: 10px; }
+  .portfolio-card-grid img { padding: 10px; }
+  .portfolio-card-grid--single img { aspect-ratio: 1; }
+  .logo-tile {
+    height: clamp(150px, 58vw, 230px);
+    padding: 10px;
+  }
+  .contact-form { gap: 18px; }
 }
 
 @media (max-width: 420px) {
