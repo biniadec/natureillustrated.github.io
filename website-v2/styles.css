@@ -51,7 +51,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero { position: relative; min-height: 760px; height: min(900px, 100svh); overflow: hidden; display: flex; align-items: center; background: var(--paper); }
 .hero::after { content: ""; position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(250,247,239,1) 0%, rgba(250,247,239,.97) 32%, rgba(250,247,239,.18) 68%, rgba(250,247,239,0) 100%); pointer-events: none; }
 .hero-art { position: absolute; z-index: 0; inset: 0; background: url("assets/nature-illustrated-hero.jpg") center / cover no-repeat; }
-.hero-pangolin { position: absolute; z-index: 2; top: clamp(66px, 7vw, 98px); left: clamp(18px, 5vw, 78px); width: clamp(430px, 34vw, 610px); height: auto; opacity: .3; filter: saturate(.78) contrast(.95); mix-blend-mode: multiply; pointer-events: none; -webkit-mask-image: linear-gradient(135deg, #000 0%, #000 58%, rgba(0,0,0,.5) 76%, transparent 100%); mask-image: linear-gradient(135deg, #000 0%, #000 58%, rgba(0,0,0,.5) 76%, transparent 100%); }
+.hero-pangolin { position: absolute; z-index: 2; top: clamp(36px, calc(7vw - 30px), 68px); left: clamp(18px, 5vw, 78px); width: clamp(430px, 34vw, 610px); height: auto; opacity: .3; filter: saturate(.78) contrast(.95); mix-blend-mode: multiply; pointer-events: none; -webkit-mask-image: linear-gradient(135deg, #000 0%, #000 58%, rgba(0,0,0,.5) 76%, transparent 100%); mask-image: linear-gradient(135deg, #000 0%, #000 58%, rgba(0,0,0,.5) 76%, transparent 100%); }
 .hero-inner { position: relative; z-index: 3; }
 .hero-copy { width: min(620px, 53%); padding-top: 54px; }
 .eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 28px; color: var(--forest); font-size: 11px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
@@ -301,7 +301,7 @@ h2 em { color: var(--terracotta); font-weight: 400; }
   .site-nav .smbe-nav { padding: 0; color: var(--terracotta); background: transparent; }
   .hero { height: auto; min-height: 760px; }
   .hero::after { background: linear-gradient(90deg, rgba(250,247,239,1) 0%, rgba(250,247,239,.92) 50%, rgba(250,247,239,.25) 100%); }
-  .hero-pangolin { top: 82px; left: 24px; width: min(62vw, 470px); opacity: .32; }
+  .hero-pangolin { top: 52px; left: 24px; width: min(62vw, 470px); opacity: .32; }
   .hero-copy { width: 66%; }
   .section-intro { grid-template-columns: 1fr; gap: 25px; }
   .about-grid, .shop-grid, .smbe-grid, .contact-grid { gap: 55px; }
@@ -319,7 +319,7 @@ h2 em { color: var(--terracotta); font-weight: 400; }
   .hero { min-height: 790px; align-items: flex-end; padding-bottom: 75px; }
   .hero-art { inset: 0 0 40%; background-position: 66% center; }
   .hero::after { background: linear-gradient(0deg, var(--paper) 0%, var(--paper) 48%, rgba(250,247,239,.15) 78%, rgba(250,247,239,.05) 100%); }
-  .hero-pangolin { top: 126px; left: 18px; width: min(78vw, 330px); opacity: .26; }
+  .hero-pangolin { top: 96px; left: 18px; width: min(78vw, 330px); opacity: .26; }
   .hero-copy { width: 100%; padding: 0; }
   .hero h1 { font-size: 50px; }
   .hero-subtitle { max-width: 19ch; margin-top: 20px; font-size: 22px; }
