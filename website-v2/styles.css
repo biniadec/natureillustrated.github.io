@@ -128,14 +128,11 @@ h2 em { color: var(--terracotta); font-weight: 400; }
 .logo-tile img:hover { transform: scale(1.025); }
 
 .shop { background: #e9e1d4; }
-.shop-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(55px, 9vw, 115px); }
-.product-showcase { min-height: 560px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 22px; background: #cbd2c1; border-radius: var(--radius); }
-.product-mockup { position: relative; overflow: hidden; display: grid; place-items: center; min-height: 245px; color: var(--forest); background: var(--paper); border-radius: 12px; box-shadow: 0 15px 32px rgba(23,63,53,.12); }
-.product-mockup span { font: italic 54px var(--serif); }
-.product-mockup small { position: absolute; left: 14px; bottom: 12px; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
-.product-shirt { color: var(--paper); background: var(--forest); }
-.product-tote { background: #e7d8c8; }
-.product-sticker { color: var(--terracotta); background: var(--sage-light); border-radius: 50%; transform: scale(.82) rotate(7deg); }
+.shop-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr); align-items: center; gap: clamp(55px, 9vw, 115px); }
+.product-showcase { position: relative; min-height: 590px; isolation: isolate; }
+.shop-shirt { position: absolute; bottom: 0; height: auto; filter: drop-shadow(0 24px 32px rgba(23, 63, 53, .16)); }
+.shop-shirt-front { z-index: 2; left: 0; width: min(76%, 490px); }
+.shop-shirt-back { z-index: 1; right: 0; width: min(70%, 450px); opacity: .92; transform: translateY(-6%) rotate(1.5deg); }
 .shop-copy > p:not(.overline) { max-width: 500px; margin: 26px 0 32px; color: #545d57; }
 
 .process { background: var(--paper); }
@@ -231,7 +228,9 @@ h2 em { color: var(--terracotta); font-weight: 400; }
   .portfolio-card-grid--landscape,
   .portfolio-card-grid--single { grid-template-columns: 1fr; }
   .logo-tile-grid { grid-template-columns: 1fr; }
-  .product-showcase { min-height: 450px; }
+  .product-showcase { min-height: 510px; }
+  .shop-shirt-front { width: min(72%, 410px); }
+  .shop-shirt-back { width: min(66%, 380px); }
   .shop-copy { grid-row: 1; }
   .timeline { grid-template-columns: 1fr; gap: 38px; }
   .timeline::before { top: 28px; bottom: 28px; left: 28px; right: auto; width: 1px; height: auto; }
@@ -247,6 +246,7 @@ h2 em { color: var(--terracotta); font-weight: 400; }
   .button { padding-inline: 17px; gap: 15px; }
   .hero h1 { font-size: 46px; }
   .hero-actions .button { flex: 1; }
-  .product-showcase { padding: 12px; gap: 10px; }
-  .product-mockup { min-height: 180px; }
+  .product-showcase { min-height: 390px; }
+  .shop-shirt-front { width: 76%; }
+  .shop-shirt-back { width: 70%; }
 }
