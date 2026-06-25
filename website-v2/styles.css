@@ -130,9 +130,10 @@ h2 em { color: var(--terracotta); font-weight: 400; }
 .shop { background: #e9e1d4; }
 .shop-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr); align-items: center; gap: clamp(55px, 9vw, 115px); }
 .product-showcase { position: relative; min-height: 590px; isolation: isolate; }
-.shop-shirt { position: absolute; bottom: 0; height: auto; filter: drop-shadow(0 24px 32px rgba(23, 63, 53, .16)); }
-.shop-shirt-front { z-index: 2; left: 0; width: min(76%, 490px); }
-.shop-shirt-back { z-index: 1; right: 0; width: min(70%, 450px); opacity: .92; transform: translateY(-6%) rotate(1.5deg); }
+.shop-shirt { position: absolute; bottom: 0; filter: drop-shadow(0 24px 32px rgba(23, 63, 53, .16)); }
+.shop-shirt img { display: block; width: 100%; height: auto; max-height: 100%; object-fit: contain; }
+.shop-shirt-front { z-index: 2; left: 0; width: min(76%, 490px); aspect-ratio: 1100 / 1211; }
+.shop-shirt-back { z-index: 1; right: 0; width: min(70%, 450px); aspect-ratio: 1100 / 1224; opacity: .92; transform: translateY(-6%) rotate(1.5deg); }
 .shop-copy > p:not(.overline) { max-width: 500px; margin: 26px 0 32px; color: #545d57; }
 
 .process { background: var(--paper); }
