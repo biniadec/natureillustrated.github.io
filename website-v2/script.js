@@ -3,7 +3,7 @@ const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('.site-nav');
 const siteConfig = window.NATURE_ILLUSTRATED_CONFIG;
 
-if (!siteConfig?.contact?.email || !siteConfig?.shop?.url || !siteConfig?.shop?.smbeCollectionUrl) {
+if (!siteConfig?.contact?.email || !siteConfig?.shop?.url) {
   throw new Error('Missing required contact or shop settings in site-config.js');
 }
 
@@ -20,10 +20,6 @@ document.querySelectorAll('[data-contact-form]').forEach((form) => {
 
 document.querySelectorAll('[data-shop-link]').forEach((link) => {
   link.href = siteConfig.shop.url;
-});
-
-document.querySelectorAll('[data-smbe-link]').forEach((link) => {
-  link.href = siteConfig.shop.smbeCollectionUrl;
 });
 
 document.querySelectorAll('[data-social-link]').forEach((link) => {
