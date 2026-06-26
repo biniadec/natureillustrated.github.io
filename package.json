@@ -4,6 +4,7 @@
   "description": "Public website repository for Nature.Illustrated.",
   "main": "index.js",
   "scripts": {
+    "qa:site": "node tools/site-qa.mjs",
     "responsive:check": "node tools/responsive-check.mjs"
   },
   "repository": {

@@ -10,6 +10,6 @@ Original, high-resolution, source, and reference images live in the private GitH
 
 The public website should contain only optimized, low-resolution, watermarked website derivatives. New website images should be exported as `.webp` files before being added here, preferably under:
 
-`website-v2/assets/images/portfolio/`
+`assets/images/portfolio/`
 
 Do not reference private GitHub raw URLs, Google Drive URLs, access tokens, or protected links from the website.

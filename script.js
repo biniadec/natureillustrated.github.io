@@ -2,6 +2,7 @@ const header = document.querySelector('[data-header]');
 const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('.site-nav');
 const siteConfig = window.NATURE_ILLUSTRATED_CONFIG;
+const contactForm = document.querySelector('.contact-form');
 
 if (!siteConfig?.contact?.email || !siteConfig?.shop?.url) {
   throw new Error('Missing required contact or shop settings in site-config.js');
@@ -26,6 +27,44 @@ document.querySelectorAll('[data-social-link]').forEach((link) => {
     link.hidden = true;
   }
 });
+
+if (contactForm) {
+  const status = contactForm.querySelector('.form-status');
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const originalButtonText = submitButton.innerHTML;
+
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (!contactForm.reportValidity()) return;
+
+    status.hidden = true;
+    status.classList.remove('is-error');
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: new FormData(contactForm),
+        headers: { Accept: 'application/json' },
+      });
+
+      if (!response.ok) throw new Error('Form submission failed');
+
+      contactForm.reset();
+      status.textContent = 'Thank you, your message has been sent.';
+      status.hidden = false;
+    } catch (error) {
+      status.textContent = 'Sorry, the message could not be sent. Please email nature.illustrated@gmail.com instead.';
+      status.hidden = false;
+      status.classList.add('is-error');
+    } finally {
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalButtonText;
+    }
+  });
+}
 
 const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 20);
 updateHeader();

@@ -37,3 +37,6 @@ website-v2/assets/images/portfolio/thesis_cover/*.pdf
 # Local tooling and generated responsive review artifacts.
 node_modules/
 tools/responsive-screenshots/
+
+# Duplicate raw/source images inside the archived v2 copy are retained in root assets.
+website-old/website-v2-source/assets/images/**

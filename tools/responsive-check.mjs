@@ -2,10 +2,12 @@ import { chromium } from '@playwright/test';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const baseUrl = process.env.SITE_URL || 'http://127.0.0.1:8765/website-v2/';
+const baseUrl = process.env.SITE_URL || 'http://127.0.0.1:8765/';
 const outDir = path.resolve('tools/responsive-screenshots');
 
 const devices = [
+  { name: 'desktop-1920', width: 1920, height: 1080 },
+  { name: 'laptop-1440', width: 1440, height: 900 },
   { name: 'iphone-se', width: 375, height: 667 },
   { name: 'iphone-15-pro', width: 393, height: 852 },
   { name: 'iphone-15-pro-max', width: 430, height: 932 },
@@ -113,13 +115,16 @@ async function main() {
       rowShots[row] = shotPath;
     }
 
+    let navShot = null;
     await page.evaluate(() => window.scrollTo(0, 0));
-    await page.locator('.nav-toggle').click();
-    await page.waitForTimeout(500);
-    const navShot = path.join(outDir, `${device.name}-viewport-nav-open.png`);
-    await page.screenshot({ path: navShot, fullPage: false });
-    await page.locator('.nav-toggle').click();
-    await page.waitForTimeout(500);
+    if (await page.locator('.nav-toggle').isVisible()) {
+      await page.locator('.nav-toggle').click();
+      await page.waitForTimeout(500);
+      navShot = path.join(outDir, `${device.name}-viewport-nav-open.png`);
+      await page.screenshot({ path: navShot, fullPage: false });
+      await page.locator('.nav-toggle').click();
+      await page.waitForTimeout(500);
+    }
 
     const fullPagePath = path.join(outDir, `${device.name}-full.png`);
     await page.screenshot({ path: fullPagePath, fullPage: true });
