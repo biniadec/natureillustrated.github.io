@@ -33,3 +33,7 @@ website-v2/assets/images/portfolio/thesis_cover/*.pdf
 *.psd
 *.ai
 *.indd
+
+# Local tooling and generated responsive review artifacts.
+node_modules/
+tools/responsive-screenshots/

@@ -1,0 +1,24 @@
+{
+  "name": "nature.illustrated_website",
+  "version": "1.0.0",
+  "description": "Public website repository for Nature.Illustrated.",
+  "main": "index.js",
+  "scripts": {
+    "responsive:check": "node tools/responsive-check.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biniadec/natureillustrated.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/biniadec/natureillustrated.github.io/issues"
+  },
+  "homepage": "https://github.com/biniadec/natureillustrated.github.io#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  }
+}
