@@ -1,27 +1,251 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nature Illustrated – Archive</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+  <meta name="description" content="Nature.Illustrated creates scientific illustrations, graphical abstracts, journal covers, and nature-inspired designs by evolutionary biologist Binia De Cahsan.">
+  <meta name="theme-color" content="#173f35">
+  <meta property="og:title" content="Nature.Illustrated | Science meets art">
+  <meta property="og:description" content="Scientific illustration and nature-inspired design for researchers and everyone who loves the natural world.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/nature-illustrated-hero.jpg">
+  <title>Nature.Illustrated | Scientific illustration &amp; design</title>
+  <link rel="icon" type="image/png" href="assets/nature-illustrated-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <iframe
-    src="https://nature-illustrated-umi12yf.gamma.site"
-    allowfullscreen
-    loading="lazy">
-  </iframe>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Nature Illustrated home">
+        <img class="brand-logo" src="assets/nature-illustrated-logo.png" alt="" width="500" height="500">
+        <span>Nature<span class="brand-dot">.</span>Illustrated</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"></div>
+      <img class="hero-pangolin" src="assets/images/hero/pangolin-hero-transparent.png" alt="" width="740" height="517" aria-hidden="true">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Science &amp; art</p>
+          <h1 id="hero-title">Nature<span>.</span>Illustrated</h1>
+          <p class="hero-subtitle">Scientific illustration &amp; nature-inspired design</p>
+          <p class="hero-intro">Created by an evolutionary biologist and hobby scientific illustrator, Nature.Illustrated brings together scientific accuracy, natural history, and elegant visual storytelling.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#portfolio">View Portfolio <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" data-shop-link target="_blank" rel="noopener noreferrer">Visit Shop <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#contact">Work With Me <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="portrait reveal">
+          <img src="assets/binia-de-cahsan-portrait.jpg" alt="Portrait of Binia De Cahsan" width="1064" height="1600">
+          <figcaption><strong>Binia De Cahsan</strong><span>Evolutionary biologist &amp; scientific illustrator</span></figcaption>
+        </figure>
+        <div class="about-copy reveal">
+          <p class="overline">About</p>
+          <h2 id="about-title">A biologist’s eye,<br><em>an illustrator’s hand.</em></h2>
+          <p class="about-lead">Hi, I’m Binia De Cahsan — an evolutionary biologist at the University of Copenhagen and a hobby scientific illustrator. I create visuals that bridge scientific accuracy and artistic storytelling.</p>
+          <p>From graphical abstracts and journal covers to nature-inspired designs for everyday life, each piece begins with curiosity and careful observation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-intro reveal">
+          <div><p class="overline">Ways to work together</p><h2 id="services-title">Services</h2></div>
+          <p>Visual support for scientific communication, publications, outreach, branding, and nature-inspired products.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal"><span class="service-icon" aria-hidden="true"><svg focusable="false"><use href="assets/icons/service-icons.svg?v=20260618-5#service-publishable-illustrations"></use></svg></span><div><h3>Scientific illustrations</h3><p>Accurate, expressive visuals for species, structures, processes, and publications.</p></div></article>
+          <article class="service-card reveal"><span class="service-icon" aria-hidden="true"><svg focusable="false"><use href="assets/icons/service-icons.svg?v=20260618-5#service-graphical-abstracts"></use></svg></span><div><h3>Graphical abstracts</h3><p>Clear visual narratives that make complex research easier to understand and share.</p></div></article>
+          <article class="service-card reveal"><span class="service-icon" aria-hidden="true"><svg focusable="false"><use href="assets/icons/service-icons.svg?v=20260618-5#service-journal-cover"></use></svg></span><div><h3>Journal cover art</h3><p>Distinctive editorial artwork grounded in the central finding of your research.</p></div></article>
+          <article class="service-card reveal"><span class="service-icon" aria-hidden="true"><svg focusable="false"><use href="assets/icons/service-icons.svg?v=20260618-5#service-infographics"></use></svg></span><div><h3>Figure and poster design</h3><p>Publication-ready figures and conference posters with thoughtful visual hierarchy.</p></div></article>
+          <article class="service-card reveal"><span class="service-icon" aria-hidden="true"><svg focusable="false"><use href="assets/icons/service-icons.svg?v=20260618-5#service-lab-branding"></use></svg></span><div><h3>Lab logos and branding</h3><p>Identity systems inspired by the organisms, questions, and character of your lab.</p></div></article>
+          <article class="service-card reveal"><span class="service-icon" aria-hidden="true"><svg focusable="false"><use href="assets/icons/service-icons.svg?v=20260618-5#service-study-species"></use></svg></span><div><h3>Nature-inspired product designs</h3><p>Original artwork for biologists, fieldworkers, students, and nature enthusiasts.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-intro portfolio-intro reveal">
+          <div><p class="overline">Selected work</p><h2 id="portfolio-title">Portfolio</h2></div>
+        </div>
+
+        <div class="gallery-sections">
+          <article class="gallery-row reveal" id="scientific-illustration">
+            <div class="gallery-label"><span class="category-tag">Natural history</span><h3>Scientific Illustration</h3><p>Detailed visual work inspired by animals, plants, fossils, and natural history collections.</p><a href="#contact">View more <span aria-hidden="true">→</span></a></div>
+            <div class="portfolio-card-grid portfolio-card-grid--square" aria-label="Scientific illustration portfolio examples">
+              <img src="assets/images/portfolio/scientific_illustration/web/bird-scientific-illustration.webp" alt="Scientific illustration of a bird with wings outstretched" width="1400" height="1157">
+              <img src="assets/images/portfolio/scientific_illustration/web/prehistoric-mammals-scientific-illustration-transparent.png" alt="Scientific illustration of two prehistoric mammals beside a tree" width="1400" height="1157">
+              <img src="assets/images/portfolio/scientific_illustration/web/okapi-scientific-illustration.webp" alt="Scientific illustration of an okapi in a natural pose" width="1157" height="1400">
+              <img src="assets/images/portfolio/scientific_illustration/web/arthropod-scientific-illustration.webp" alt="Scientific illustration of a small aquatic arthropod" width="1200" height="1200">
+              <img src="assets/images/portfolio/scientific_illustration/web/blastocyst-cell-scientific-illustration-unwatermarked.webp" alt="Scientific illustration of a blastocyst with early embryonic cells" width="820" height="820">
+              <img src="assets/images/portfolio/scientific_illustration/web/lice-anatomy-scientific-illustration.webp" alt="Scientific sketch sheet showing lice anatomy details" width="1298" height="1000">
+            </div>
+          </article>
+          <article class="gallery-row reverse reveal" id="scientific-figures">
+            <div class="gallery-label"><span class="category-tag">Research figures</span><h3>Scientific Figures</h3><p>Publication-ready figure panels, comparative diagrams, and data-rich visual summaries.</p><a href="#contact">View more <span aria-hidden="true">→</span></a></div>
+            <div class="portfolio-card-grid portfolio-card-grid--landscape" aria-label="Scientific figure portfolio examples">
+              <img src="assets/images/portfolio/figures/web/sabertooth-phylogeny-figure.webp" alt="Scientific figure combining a sabertooth cat illustration with a phylogenetic tree" width="741" height="342">
+              <img src="assets/images/portfolio/figures/web/carnivore-positive-selection-genes-figure.webp" alt="Scientific figure showing carnivore gene functions and anatomical traits" width="850" height="601">
+              <img src="assets/images/portfolio/figures/web/ecology-habitat-wheel-figure.webp" alt="Circular ecological habitat figure with animals arranged by environment" width="1400" height="1400">
+            </div>
+          </article>
+          <article class="gallery-row reverse reveal" id="graphical-abstracts">
+            <div class="gallery-label"><span class="category-tag">Research communication</span><h3>Graphical Abstracts</h3><p>Clear, attractive visuals that communicate research questions, methods, and key findings.</p><a href="#contact">View more <span aria-hidden="true">→</span></a></div>
+            <div class="portfolio-card-grid portfolio-card-grid--single" aria-label="Graphical abstract portfolio examples">
+              <img src="assets/images/portfolio/graphical_abstracts/web/bowhead-whaling-population-graphical-abstract.webp" alt="Graphical abstract explaining bowhead whale population history and commercial whaling impacts" width="1400" height="1400">
+            </div>
+          </article>
+          <article class="gallery-row reveal" id="journal-covers">
+            <div class="gallery-label"><span class="category-tag">Scientific editorial</span><h3>Journal Covers</h3><p>Editorial-style artwork for scientific publications and special issues.</p><a href="#contact">View more <span aria-hidden="true">→</span></a></div>
+            <div class="portfolio-card-grid portfolio-card-grid--covers" aria-label="Journal cover portfolio examples">
+              <img src="assets/images/portfolio/journal-covers/cell-colorful-fish-cover-design.webp" alt="Journal cover design featuring colorful fish illustrations for Cell" width="315" height="400">
+              <img src="assets/images/portfolio/journal-covers/cell-mammoth-cover-design.webp" alt="Journal cover design featuring a mammoth illustration for Cell" width="308" height="400">
+              <img src="assets/images/portfolio/journal-covers/cell-giraffe-cover-design.webp" alt="Journal cover design featuring a giraffe illustration for Cell" width="330" height="400">
+              <img src="assets/images/portfolio/journal-covers/mbe-black-rhino-cover-design.webp" alt="Journal cover design featuring a black rhinoceros conservation illustration" width="365" height="400">
+              <img src="assets/images/portfolio/journal-covers/cell-ancient-maize-cover-design.webp" alt="Journal cover design featuring ancient maize illustrations for Cell" width="330" height="400">
+              <img src="assets/images/portfolio/journal-covers/mbe-koala-dna-cover-design.webp" alt="Journal cover design featuring a koala and DNA illustration for Molecular Biology and Evolution" width="304" height="400">
+              <img src="assets/images/portfolio/journal-covers/web/bowhead-cell-cover-design.webp" alt="Journal cover design featuring a bowhead whale eye illustration for Cell" width="900" height="1198">
+              <img src="assets/images/portfolio/journal-covers/web/current-biology-evolution-cover-design.webp" alt="Journal cover-style evolutionary biology artwork featuring multiple animals and DNA sequence motifs" width="1200" height="991">
+              <img src="assets/images/portfolio/journal-covers/web/genes-arctic-cover-design.webp" alt="Journal cover-style Arctic marine ecosystem artwork with bowhead whales and population genetics" width="1200" height="630">
+            </div>
+          </article>
+          <article class="gallery-row reverse reveal" id="thesis-covers">
+            <div class="gallery-label"><span class="category-tag">Academic design</span><h3>Thesis Covers</h3><p>Personalized thesis cover artwork that combines research themes with editorial illustration.</p><a href="#contact">View more <span aria-hidden="true">→</span></a></div>
+            <div class="portfolio-card-grid portfolio-card-grid--covers" aria-label="Thesis cover portfolio examples">
+              <img src="assets/images/portfolio/thesis_cover/web/arctic-landscape-thesis-cover.webp" alt="Thesis cover illustration of an Arctic landscape with sled tracks" width="900" height="1273">
+              <img src="assets/images/portfolio/thesis_cover/web/cave-painting-mammoth-thesis-cover.webp" alt="Thesis cover illustration of a cave painting inspired mammoth beside a circular motif" width="900" height="1089">
+              <img src="assets/images/portfolio/thesis_cover/web/mammoth-elephant-thesis-cover.webp" alt="Thesis cover illustration combining mammoth and elephant anatomy" width="900" height="1089">
+              <img src="assets/images/portfolio/thesis_cover/web/dormouse-genetics-thesis-cover.webp" alt="Thesis cover illustration of a dormouse interacting with a glowing molecular form" width="1089" height="900">
+              <img src="assets/images/portfolio/thesis_cover/web/molecular-patterns-thesis-cover.webp" alt="Thesis cover artwork combining molecular graphics and illustrated organisms" width="1100" height="1100">
+            </div>
+          </article>
+          <article class="gallery-row reverse reveal" id="logos-branding">
+            <div class="gallery-label"><span class="category-tag">Visual identity</span><h3>Logos &amp; Branding</h3><p>Visual identities for labs, research groups, conferences, and outreach projects.</p><a href="#contact">View more <span aria-hidden="true">→</span></a></div>
+            <div class="logo-tile-grid" aria-label="Logo and branding portfolio examples">
+              <div class="logo-tile"><img src="assets/images/portfolio/logos/petersen-global-consulting-logo.webp" alt="Logo design for Petersen Global Consulting with circuit-inspired mark" width="1000" height="750"></div>
+              <div class="logo-tile"><img src="assets/images/portfolio/logos/smbe-2026-animal-number-logo.webp" alt="SMBE 2026 logo mark formed from animal silhouettes" width="1000" height="750"></div>
+              <div class="logo-tile"><img src="assets/images/portfolio/logos/mbe-copenhagen-black-swan-logo.webp" alt="MBE Copenhagen 2026 black swan logo with DNA motif" width="1800" height="973"></div>
+              <div class="logo-tile"><img src="assets/images/portfolio/logos/copenhagen-gut-microbiome-hub-logo.webp" alt="Copenhagen Gut Microbiome Hub logo with DNA and microbe motifs" width="1000" height="750"></div>
+            </div>
+          </article>
+          <article class="gallery-row reveal" id="nature-art">
+            <div class="gallery-label"><span class="category-tag">Art &amp; objects</span><h3>Nature Art &amp; Products</h3><p>Nature-inspired designs adapted for prints, clothing, stickers, and other products.</p><a data-shop-link target="_blank" rel="noopener noreferrer">View more <span aria-hidden="true">↗</span></a></div>
+            <div class="portfolio-card-grid portfolio-card-grid--mixed" aria-label="Nature art and product design portfolio examples">
+              <img src="assets/images/portfolio/nature_art_and_products/web/fern-botanical-art.webp" alt="Black line artwork of a fern frond for nature-inspired products" width="990" height="1400">
+              <img src="assets/images/portfolio/nature_art_and_products/web/swan-dna-nature-design.webp" alt="Nature-inspired swan and DNA line artwork" width="1000" height="915">
+              <img src="assets/images/portfolio/nature_art_and_products/web/bat-floral-line-art.webp" alt="Light line artwork of bats and botanical elements" width="1165" height="900">
+              <img src="assets/images/portfolio/nature_art_and_products/web/alpaca-llama-watercolor-art.webp" alt="Watercolor-style alpaca and llama artwork" width="1200" height="848">
+              <img src="assets/images/portfolio/nature_art_and_products/web/bears-watercolor-art.webp" alt="Watercolor-style polar bear and brown bear artwork" width="1200" height="848">
+              <img src="assets/images/portfolio/nature_art_and_products/web/bowhead-whale-watercolor-art.webp" alt="Watercolor-style bowhead whale artwork" width="1200" height="848">
+              <img src="assets/images/portfolio/nature_art_and_products/web/hyena-watercolor-art.webp" alt="Watercolor-style hyena portrait artwork" width="847" height="1200">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shop" id="shop" aria-labelledby="shop-title">
+      <div class="container shop-grid">
+        <div class="product-showcase reveal" aria-label="SMBE T-shirt product mockups">
+          <div class="shop-shirt shop-shirt-back">
+            <img src="assets/images/shop/smbe-shirt-back.webp" alt="Back view of a navy SMBE Copenhagen 2026 T-shirt" width="1100" height="1224">
+          </div>
+          <div class="shop-shirt shop-shirt-front">
+            <img src="assets/images/shop/smbe-shirt-front.webp" alt="Front view of a navy SMBE Copenhagen 2026 T-shirt" width="1100" height="1211">
+          </div>
+        </div>
+        <div class="shop-copy reveal">
+          <p class="overline">Wear, use, and share</p>
+          <h2 id="shop-title">Nature.Illustrated<br><em>Shop</em></h2>
+          <p>Nature-inspired designs for biologists, fieldworkers, students, and anyone who loves the natural world.</p>
+          <!-- Add main Spreadshop URL here -->
+          <!-- The active URL is configured in site-config.js. -->
+          <a class="button button-primary" data-shop-link target="_blank" rel="noopener noreferrer">Visit Shop <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-intro reveal">
+          <div><p class="overline">A simple collaboration</p><h2 id="process-title">How it <em>works</em></h2></div>
+          <p>A straightforward process with scientific accuracy and clear communication built into every stage.</p>
+        </div>
+        <ol class="timeline">
+          <li class="reveal"><span class="timeline-number">01</span><div><h3>Tell me about your idea</h3><p>Share the science, audience, format, timeline, and references behind your project.</p></div></li>
+          <li class="reveal"><span class="timeline-number">02</span><div><h3>Sketch and refine the concept</h3><p>I develop the visual direction and refine it with your scientific feedback.</p></div></li>
+          <li class="reveal"><span class="timeline-number">03</span><div><h3>Receive final files</h3><p>Artwork arrives ready for print, web, journals, presentations, or products.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="overline light">Start a conversation</p>
+          <h2 id="contact-title">Contact</h2>
+          <p>Have a project, commission, collaboration, or product idea in mind? Get in touch.</p>
+          <div class="contact-links" aria-label="Contact and social links">
+            <a data-contact-email>Email</a>
+            <a data-social-link="instagram" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+            <a data-social-link="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a data-social-link="bluesky" target="_blank" rel="noopener noreferrer">Bluesky <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <form class="contact-form reveal" action="https://formspree.io/f/mnjkpdqp" method="POST">
+          <input type="hidden" name="_subject" value="New enquiry from Nature.Illustrated">
+          <div class="field-row">
+            <label>Name<input type="text" name="name" autocomplete="name" required placeholder="Your name"></label>
+            <label>Email<input type="email" name="email" autocomplete="email" required placeholder="Your email address"></label>
+          </div>
+          <label>Project type
+            <select name="project_type" required>
+              <option value="" selected disabled>Select a service</option>
+              <option>Scientific illustration</option><option>Graphical abstract</option><option>Journal cover art</option><option>Figure or poster design</option><option>Lab logo or branding</option><option>Other</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="5" required placeholder="A little about your project, timing, and intended use..."></textarea></label>
+          <button class="button button-cream" type="submit">Send project enquiry <span aria-hidden="true">→</span></button>
+          <p class="form-note">By submitting, you agree to be contacted about your enquiry.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div><a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/nature-illustrated-logo.png" alt="" width="500" height="500"><span>Nature<span class="brand-dot">.</span>Illustrated</span></a><p>Scientific illustration and nature-inspired design.</p></div>
+      <div class="footer-links"><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#shop">Shop</a><a href="#contact">Contact</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span data-year></span> Nature.Illustrated</span><span>Science meets art · Copenhagen, Denmark</span></div>
+  </footer>
 </body>
 </html>
